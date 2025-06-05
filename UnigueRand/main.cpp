@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 void main()
 {
@@ -6,13 +6,13 @@ void main()
 	const int SIZE = 10;
 	int arr[SIZE] = { 3, 5, 8 };
 	int minRand, maxRand;
-	cout << "Ââåäèòå ìèíèìàëüíîå ñëó÷àéíîå ÷èñëî: "; cin >> minRand;
-	cout << "Ââåäèòå ìàêñèìàëüíîå ñëó÷àéíîå ÷èñëî: "; cin >> maxRand;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> minRand;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> maxRand;
 	for (int i = 0; i < SIZE; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
-	//Âûâîä ìàññèâà íà ýêðàí:
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½:
 	for (int i = 0; i < SIZE; i++)
 	{
 		cout << arr[i] << "\t";
