@@ -3,7 +3,7 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int SIZE = 5;
+	const int SIZE = 10;
 	int arr[SIZE] = { 3, 5, 8 };
 	int minRand, maxRand;
 	cout << "¬ведите минимальное случайное число: "; cin >> minRand;
