@@ -38,7 +38,6 @@ void main()
 	{
 		cout << arr[i] << "\t";
 	}
-
 	cout << endl;
 	int min, max;
 	min = max = arr[0];
