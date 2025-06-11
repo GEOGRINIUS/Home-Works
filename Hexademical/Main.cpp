@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
 {
 	setlocale(LC_ALL, "");
 	int decimal;
-	cout << "Ââåäèòå äåñÿòè÷íîå ÷èñëî: "; cin >> decimal;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> decimal;
 	const int MAX_HEX_CAPACITY = 8;
 	char hex[MAX_HEX_CAPACITY] = {};
 	int i = 0;
