@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 using std::cin; using std::cout; using std::endl;
 
@@ -30,7 +30,7 @@ void main()
 
 #ifdef COLUMS_SHIFT
 	int number_of_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		for (int i = 0; i < ROWS; i++)
@@ -42,7 +42,7 @@ void main()
 			}
 			arr[i][COLS - 1] = buffer;
 		}
-		//Âûâîä ñäâèãíóòîãî ìàññèâà:
+		//Ð’Ñ‹Ð²Ð¾Ð´ ÑÐ´Ð²Ð¸Ð³Ð½ÑƒÑ‚Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°:
 		for (int i = 0; i < ROWS; i++)
 		{
 			for (int j = 0; j < COLS; j++)
@@ -52,11 +52,11 @@ void main()
 			cout << endl;
 		}
 	}
-#endif //COLUMS_SHIFT //Âïðàâî;
+#endif //COLUMS_SHIFT //Ð’Ð¿Ñ€Ð°Ð²Ð¾;
 
 #ifdef CROSS_CUTTING_SHIFTS
 	int number_of_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	for (int i = 0; i < number_of_shifts; i++)
 	{
 		for (int i = 0; i < ROWS; i++)
@@ -68,7 +68,7 @@ void main()
 			}
 			arr[i][COLS - 1] = buffer;
 		}
-		//Âûâîä ñäâèãíóòîãî ìàññèâà:
+		//Ð’Ñ‹Ð²Ð¾Ð´ ÑÐ´Ð²Ð¸Ð³Ð½ÑƒÑ‚Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°:
 		for (int i = 0; i < ROWS; i++)
 		{
 			for (int j = 0; j < COLS; j++)
