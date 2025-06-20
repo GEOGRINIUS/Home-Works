@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int Fac(int number, int factorial);
@@ -7,7 +7,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int number;
-	cout << "Ââåäè ÷èñëî èëè öèôðó äëÿ ôàêòîðèàëà: "; cin >> number;
+	cout << "Ð’Ð²ÐµÐ´Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ Ð¸Ð»Ð¸ Ñ†Ð¸Ñ„Ñ€Ñƒ Ð´Ð»Ñ Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð»Ð°: "; cin >> number;
 	int factorial = 1;
 	cout << Fac(number, factorial) << endl;
 }

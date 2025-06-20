@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int Step(int number, int step, int result);
@@ -8,8 +8,8 @@ void main()
 	setlocale(LC_ALL, "");
 	int number, step;
 	int result = 1;
-	cout << "Ââåäèòå ÷èñëî èëè öèôğó: "; cin >> number;
-	cout << "Â êàêóş ñòåïåíü íóæíî ñäåëàòü êîìïüşòåğó?: "; cin >> step;
+	cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ¸Ğ»Ğ¸ Ñ†Ğ¸Ñ„Ñ€Ñƒ: "; cin >> number;
+	cout << "Ğ’ ĞºĞ°ĞºÑƒÑ ÑÑ‚ĞµĞ¿ĞµĞ½ÑŒ Ğ½ÑƒĞ¶Ğ½Ğ¾ ÑĞ´ĞµĞ»Ğ°Ñ‚ÑŒ ĞºĞ¾Ğ¼Ğ¿ÑŒÑÑ‚ĞµÑ€Ñƒ?: "; cin >> step;
 	cout << number << "^" << step << endl;
 	cout << " = " << Step(number, step, result) << endl;
 }
