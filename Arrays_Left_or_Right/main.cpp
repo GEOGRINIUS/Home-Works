@@ -61,12 +61,12 @@ void main()
 	{
 		for (int i = 0; i < ROWS; i++)
 		{
-			int buffer = arr[i][0];
-			for (int j = 1; j < COLS; j++)
+			int buffer = arr[i][COLS - 1];
+			for (int j = COLS - 1; j > 0; j--)
 			{
-				arr[i][j - 1] = arr[i][j];
+				arr[i][j] = arr[i][j - 1];
 			}
-			arr[i][COLS - 1] = buffer;
+			arr[i][0] = buffer;
 		}
 		//Вывод сдвигнутого массива:
 		for (int i = 0; i < ROWS; i++)
