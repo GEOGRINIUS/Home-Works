@@ -1,0 +1,3 @@
+﻿  Main.cpp
+C:\C++\Home-Works\Double_FillRand;\Main.cpp(15,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Double_FillRand;.vcxproj -> C:\C++\Home-Works\x64\Debug\Double_FillRand;.exe
