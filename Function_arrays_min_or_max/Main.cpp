@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -17,8 +17,8 @@ void main()
 	int arr[n];
 	FillRand(arr, n, 100, 1000);
 	Print(arr, n);
-	cout << "Минимальное значение: " << minValueIn(arr, n) << endl;
-	cout << "Максимальное значение: " << maxValueIn(arr, n) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: " << minValueIn(arr, n) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ: " << maxValueIn(arr, n) << endl;
 }
 
 void FillRand(int arr[], const int n, int minRand, int maxRand)
