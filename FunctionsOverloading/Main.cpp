@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -32,8 +32,8 @@ void main()
     cout << endl;
     Sort(d_arr, D_SIZE);
     Print(d_arr, D_SIZE);
-    cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(d_arr, D_SIZE) << endl;
-    cout << "Ñðåäíåå-àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avarage(d_arr, D_SIZE) << endl;
+    cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(d_arr, D_SIZE) << endl;
+    cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ-Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avarage(d_arr, D_SIZE) << endl;
     cout << endl;
 
     int i_arr_2[ROWS][COLS];
@@ -42,8 +42,8 @@ void main()
     cout << endl;
     Sort(i_arr_2, ROWS, COLS);
     Print(i_arr_2, ROWS, COLS);
-    cout << "Ñóììà ýëåìåíòîâ ìàññèâà: " << Sum(i_arr_2, ROWS, COLS) << endl;
-    cout << "Ñðåäíåå-àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << Avarage(i_arr_2, ROWS, COLS) << endl;
+    cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Sum(i_arr_2, ROWS, COLS) << endl;
+    cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ-Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << Avarage(i_arr_2, ROWS, COLS) << endl;
 }
 
 
