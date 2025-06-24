@@ -7,6 +7,11 @@ using std::endl;
 const int ROWS = 3;
 const int COLS = 4;
 
+double minValueIn(double arr[], const int n);
+double maxValueIn(double arr[], const int n);
+int maxValueIn(int arr[][COLS], const int ROWS, const int COLS);
+int minValueIn(int arr[][COLS], const int ROWS, const int COLS);
+
 void FillRand(int arr[][COLS], const int ROWS, const int COLS);
 void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
 
@@ -32,6 +37,8 @@ void main()
     cout << endl;
     Sort(d_arr, D_SIZE);
     Print(d_arr, D_SIZE);
+    cout << "Минимальное значение: " << minValueIn(d_arr, D_SIZE) << endl;
+    cout << "Максимальное значение: " << maxValueIn(d_arr, D_SIZE) << endl;
     cout << "Сумма элементов массива: " << Sum(d_arr, D_SIZE) << endl;
     cout << "Среднее-арифметическое элементов массива: " << Avarage(d_arr, D_SIZE) << endl;
     cout << endl;
@@ -42,8 +49,63 @@ void main()
     cout << endl;
     Sort(i_arr_2, ROWS, COLS);
     Print(i_arr_2, ROWS, COLS);
+    cout << "Минимальное значение: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
+    cout << "Максимальное значение: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
     cout << "Сумма элементов массива: " << Sum(i_arr_2, ROWS, COLS) << endl;
     cout << "Среднее-арифметическое элементов массива: " << Avarage(i_arr_2, ROWS, COLS) << endl;
+}
+
+double minValueIn(double arr[], const int n)
+{
+    double min = arr[0];
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[i] < min)
+            min = arr[i];
+    }
+    return min;
+}
+double maxValueIn(double arr[], const int n)
+{
+    double max = arr[0];
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+
+int minValueIn(int arr[][COLS], const int ROWS, const int COLS)
+{
+    int min = INT_MAX;
+    for (int i = 0; i < ROWS; i++)
+    {
+        for (int j = 0; j < COLS; j++)
+        {
+            if (arr[i][j] < min)
+            {
+                min = arr[i][j];
+            }
+        }
+    }
+    return min;
+}
+int maxValueIn(int arr[][COLS], const int ROWS, const int COLS)
+{
+    int max = INT_MIN;
+    for (int i = 0; i < ROWS; i++)
+    {
+        for (int j = 0; j < COLS; j++)
+        {
+            if (arr[i][j] > max)
+            {
+                max = arr[i][j];
+            }
+        }
+    }
+    return max;
 }
 
 
